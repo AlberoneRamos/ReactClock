@@ -1,19 +1,20 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import Inferno from 'inferno';
+import { Router, Route, IndexRoute } from 'inferno-router';
+import createBrowserHistory from 'history/createBrowserHistory';
+import Main from './components/Main';
+import Timer from './components/Timer';
+import Countdown from './components/Countdown';
+import 'style-loader!foundation-sites/dist/css/foundation.min.css';
+import 'style-loader!css-loader!sass-loader!./styles/app.scss';
+$(document).foundation();
+const browserHistory = createBrowserHistory();
 
-var objetoUm = {
-    nome: "Henrique",
-    cidade: "BH"
-}
-
-var objetoDois = {
-    idade: 17,
-    ...objetoUm
-}
-
-console.log(objetoDois);
-
-ReactDOM.render(
-    <h1>Panela de pressão, mané</h1>,
+Inferno.render(
+    <Router history={browserHistory}>
+        <Route exact path="/" component={Main}>
+            <IndexRoute exact  path='/' component={Timer}/>
+            <Route exact path='/countdown' component={Countdown}/>
+        </Route>
+    </Router>,
     document.getElementById('app')
 );

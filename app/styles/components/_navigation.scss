@@ -1,0 +1,15 @@
+.top-bar{
+    & ul{
+        background-color:$grey;
+    }
+    background-color:$grey;
+
+    & .menu-text{
+        color:#eee;
+    }
+    & .menu > .menu-text > a{
+        display:inline;
+        padding:0;
+    }
+}
+
