@@ -1,12 +1,15 @@
 import Inferno from 'inferno';
-import Component from 'inferno-component'
+import Component from 'inferno-component';
 
 export default class Countdown extends Component{
-    render(){
-        return(
-            <div>
-                <h1>Countdown!</h1>
-            </div>
-        );
-    }
+    
+        render(){
+            return(
+                <div>
+                    <h1>Countdown</h1>
+                    <Clock totalSeconds={120}/>
+                </div>
+            );
+        }
+
 }

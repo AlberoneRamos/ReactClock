@@ -24,6 +24,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.1",
+    "eslint": "^3.19.0",
     "expect": "^1.20.2",
     "foundation-sites": "^6.3.1",
     "inferno-test-utils": "^3.1.2",
