@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate",
+  "name": "react-clock",
   "version": "1.0.0",
   "description": "Aplicativo react simples",
   "main": "index.js",
@@ -15,7 +15,8 @@
     "inferno-component": "^3.1.2",
     "inferno-router": "^3.1.2",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",

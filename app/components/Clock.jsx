@@ -16,7 +16,7 @@ export default class Clock extends Component{
     }
 
     render(){
-        const {totalSeconds} = this.props;
+        var {totalSeconds} = this.props;
         return(
             <div className="clock">
                 <span className="clock-text">
