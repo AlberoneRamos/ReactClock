@@ -10,10 +10,10 @@ export default class NavigationBar extends Component{
                     <ul className="menu">
                         <li className="menu-text">ReactClock</li>
                         <li>
-                            <Link to='/' activeClassName="active" activeStyle={{fontWeight:'bold'}}>Timer</Link>
+                            <Link exact to='/' activeClassName="active" activeStyle={{fontWeight:'bold'}}>Timer</Link>
                         </li>
                         <li>
-                            <Link to='/countdown' activeClassName="active" activeStyle={{fontWeight:'bold'}}>Countdown</Link>
+                            <Link exact to='/countdown' activeClassName="active" activeStyle={{fontWeight:'bold'}}>Countdown</Link>
                         </li>
                     </ul>
                 </div>

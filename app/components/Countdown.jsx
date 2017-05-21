@@ -37,8 +37,6 @@ export default class Countdown extends Component{
             this.timer = undefined;
         }
 
-        componentWillUpdate(nextProps,nextState){}
-
         startTimer(){
             this.timer = setInterval(() => {
                 var newCount = this.state.count - 1;
@@ -47,7 +45,6 @@ export default class Countdown extends Component{
                     this.setState({countdownStatus: 'stopped'});
                 }
             },1000);
-            
         }
 
         handleSetCountdown(seconds){
@@ -75,7 +72,7 @@ export default class Countdown extends Component{
                     
             }
             return(
-                <div>
+                <div class="text-center">
                     <h1>Countdown</h1>
                     <Clock totalSeconds={count}/>
                     {renderControlArea()}
