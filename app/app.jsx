@@ -11,7 +11,7 @@ const hashHistory = createHashHistory();
 
 Inferno.render(
     <Router history={hashHistory}>
-        <Route path='/' component={Main}>
+        <Route exact path='/' component={Main}>
             <IndexRoute path='/' component={Timer}/>
             <Route path='/countdown' component={Countdown}/>
         </Route>

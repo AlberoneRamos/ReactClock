@@ -1,5 +1,5 @@
 var webpack = require('webpack');
-
+var path = require('path');
 module.exports = {
      entry: [
         'script-loader!jquery/dist/jquery.min.js',
@@ -39,5 +39,8 @@ module.exports = {
             }
         ]
     },
-    devtool: 'inline-source-map'
+    devtool: 'inline-source-map',
+    devServer: {
+      historyApiFallback: true
+  }
 };
